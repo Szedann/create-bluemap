@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95777d8a-6a43-4876-9661-de6c6532bcf9" name="Changes" comment="1.21 neoforge" />
+    <list default="true" id="95777d8a-6a43-4876-9661-de6c6532bcf9" name="Changes" comment="1.21 neoforge">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,12 +38,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="create-bluemap" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="create-bluemap" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="mod development" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -90,35 +87,35 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build create-bluemap.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.create-bluemap [:fabric:build].executor": "Run",
-    "Gradle.create-bluemap [runClient].executor": "Run",
-    "Gradle.create-bluemap:fabric [build].executor": "Run",
-    "Gradle.create-bluemap:fabric [runClient].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "1.21.1/neoforge",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JDK": "temurin-21",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build create-bluemap.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.create-bluemap [:fabric:build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.create-bluemap [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.create-bluemap:fabric [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.create-bluemap:fabric [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1.21.1/neoforge&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JDK&quot;: &quot;temurin-21&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "jdk.preference.JDK": [
-      "17=C:/Program Files/Eclipse Adoptium/jdk-17.0.9.9-hotspot"
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.JDK&quot;: [
+      &quot;17=C:/Program Files/Eclipse Adoptium/jdk-17.0.9.9-hotspot&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\codingProjects\create-bluemap" />
@@ -425,6 +422,7 @@
     <MESSAGE value="max distance on carriages" />
     <MESSAGE value="config" />
     <MESSAGE value="1.21 neoforge" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.21 neoforge" />
+    <MESSAGE value="gh actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="gh actions" />
   </component>
 </project>
