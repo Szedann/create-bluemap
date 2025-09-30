@@ -1,4 +1,4 @@
-package dev.szedann.createBluemap;
+package dev.szedann.create_bluemap;
 
 import de.bluecolored.bluemap.api.BlueMapAPI;
 
@@ -13,7 +13,7 @@ public class Watcher {
     private static ScheduledFuture<?> future;
 
     public static void start() {
-        CreateBluemap.LOGGER.info("Starting Create Bluemap updater");
+        Create_bluemap.LOGGER.info("Starting Create Bluemap updater");
         Runnable task = () -> {
             Optional<BlueMapAPI> apiOptional = BlueMapAPI.getInstance();
             apiOptional.ifPresent(api -> {
@@ -21,11 +21,11 @@ public class Watcher {
                     Trains.update(api);
                     Tracks.update(api);
                 } catch (Exception e) {
-                    CreateBluemap.LOGGER.error(e.getMessage());
+                    Create_bluemap.LOGGER.error(e.getMessage());
                 }
             });
         };
-        future = scheduler.scheduleAtFixedRate(task, 0, CreateBluemap.config.interval.get(), TimeUnit.SECONDS);
+        future = scheduler.scheduleAtFixedRate(task, 0, Config.interval, TimeUnit.SECONDS);
 
     }
 

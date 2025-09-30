@@ -1,4 +1,4 @@
-package dev.szedann.createBluemap;
+package dev.szedann.create_bluemap;
 
 import com.flowpowered.math.vector.Vector3d;
 import com.simibubi.create.Create;
@@ -14,13 +14,14 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class Tracks {
     private static final Color trackColor = new Color("#fff");
     public static void update(BlueMapAPI api) {
-        if (!CreateBluemap.config.renderTracks.get())
-            return;
+        if (!Config.renderTracks) return;
         Map<ResourceKey<Level>, MarkerSet> lineMarkerSets = new HashMap<>();
 
         Create.RAILWAYS.trackNetworks.forEach((graphUuid, graph) -> {

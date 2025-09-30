@@ -1,4 +1,4 @@
-package dev.szedann.createBluemap;
+package dev.szedann.create_bluemap;
 
 import com.flowpowered.math.vector.Vector3d;
 import com.simibubi.create.Create;
@@ -24,9 +24,9 @@ public class Trains {
     private static final Color scheduledColor = new Color("#99f");
 
     public static void update(BlueMapAPI api) {
-        if (CreateBluemap.config.renderTrains.get())
+        if (Config.renderTrains)
             updatePOIs(api);
-        if (CreateBluemap.config.renderCarriages.get())
+        if (Config.renderCarriages)
             updateCarriages(api);
 
     }
@@ -69,17 +69,20 @@ public class Trains {
         Map<ResourceKey<Level>, MarkerSet> lineMarkerMap = new HashMap<>();
 
         Create.RAILWAYS.trains.forEach((uuid, train) -> {
-            TrackNode node = train.carriages.get(0).getLeadingPoint().node1;
-            if (node == null)
-                return;
-            ResourceKey<Level> level = node.getLocation().dimension;
-            if (!lineMarkerMap.containsKey(level)) {
-                lineMarkerMap.put(level, MarkerSet.builder()
-                        .label(String.format("Carriages in %s", level.location().toShortLanguageKey())).build());
-            }
 
             int i = 0;
             for (Carriage carriage : train.carriages) {
+                TrackNode node = carriage.getLeadingPoint().node1;
+                if (node == null)
+                    return;
+                ResourceKey<Level> level = node.getLocation().dimension;
+
+                if (carriage.getTrailingPoint().node2.getLocation().dimension != level)
+                    return;
+                if (!lineMarkerMap.containsKey(level)) {
+                    lineMarkerMap.put(level, MarkerSet.builder()
+                            .label(String.format("Carriages in %s", level.location().toShortLanguageKey())).build());
+                }
                 i++;
                 Vec3 p1 = carriage.getLeadingPoint().getPosition(train.graph);
                 Vec3 p2 = carriage.getTrailingPoint().getPosition(train.graph);
