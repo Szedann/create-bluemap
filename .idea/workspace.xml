@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95777d8a-6a43-4876-9661-de6c6532bcf9" name="Changes" comment="config">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Tracks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Trains.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Watcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common/create-bluemap.common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common/create-bluemap.common.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common/create-bluemap.common.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fabric/create-bluemap.fabric.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fabric/create-bluemap.fabric.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/fabric/create-bluemap.fabric.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/forge/create-bluemap.forge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/forge/create-bluemap.forge.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/forge/create-bluemap.forge.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client___fabric__fabric.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client___forge__forge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___fabric__fabric.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server___forge__forge.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/dev/szedann/createBluemap/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/dev/szedann/createBluemap/CreateBluemap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/dev/szedann/createBluemap/Tracks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/dev/szedann/createBluemap/Trains.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/dev/szedann/createBluemap/Watcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/resources/create-bluemap.mixins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/src/main/java/dev/szedann/createBluemap/fabric/CreateBluemapFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/src/main/java/dev/szedann/createBluemap/fabric/client/CreateBluemapFabricClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fabric/src/main/resources/fabric.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge/src/main/java/dev/szedann/createBluemap/forge/CreateBluemapForge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge/src/main/resources/META-INF/mods.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forge/src/main/resources/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/fabric">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="create-bluemap" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="create-bluemap" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="create-bluemap" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Szedann&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Szedann/create-bluemap.git&quot;,
+    &quot;accountId&quot;: &quot;cbb7b33a-e335-4b75-8513-aca9e4b8d8ad&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2wukkrXxi4bVh0W0CghLIspVdCD" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build create-bluemap.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.create-bluemap [:fabric:build].executor": "Run",
+    "Gradle.create-bluemap [runClient].executor": "Run",
+    "Gradle.create-bluemap:fabric [build].executor": "Run",
+    "Gradle.create-bluemap:fabric [runClient].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "1.21.1/neoforge",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JDK": "temurin-21",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "jdk.preference.JDK": [
+      "17=C:/Program Files/Eclipse Adoptium/jdk-17.0.9.9-hotspot"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\codingProjects\create-bluemap" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle :fabric:build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.create-bluemap [runClient]">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="create-bluemap.main" />
+      <option name="PROGRAM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\classes\\java\\main;create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Data" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="create-bluemap.main" />
+      <option name="PROGRAM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\dataRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\dataRunVmArgs.txt -Dfml.modFolders=create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\classes\\java\\main;create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTestServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="create-bluemap.main" />
+      <option name="PROGRAM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\gameTestServerRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\gameTestServerRunVmArgs.txt -Dfml.modFolders=create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\classes\\java\\main;create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="create-bluemap.main" />
+      <option name="PROGRAM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@F:\\codingProjects\\create-bluemap\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\classes\\java\\main;create_bluemap%%F:\\codingProjects\\create-bluemap\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="create-bluemap [:fabric:build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":fabric:build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="create-bluemap [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="create-bluemap:fabric [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="create-bluemap:fabric [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fabric" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.create-bluemap [runClient]" />
+        <item itemvalue="Gradle.create-bluemap:fabric [runClient]" />
+        <item itemvalue="Gradle.create-bluemap:fabric [build]" />
+        <item itemvalue="Gradle.create-bluemap [:fabric:build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95777d8a-6a43-4876-9661-de6c6532bcf9" name="Changes" comment="" />
+      <created>1746898991878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746898991878</updated>
+      <workItem from="1746898993137" duration="18752000" />
+      <workItem from="1747152219383" duration="10203000" />
+      <workItem from="1747163068642" duration="1359000" />
+      <workItem from="1747165427459" duration="15189000" />
+      <workItem from="1748350013929" duration="673000" />
+      <workItem from="1749553568777" duration="2000" />
+      <workItem from="1749587277867" duration="63000" />
+      <workItem from="1749919726664" duration="40000" />
+      <workItem from="1749985409402" duration="10000" />
+      <workItem from="1751190987492" duration="16000" />
+      <workItem from="1752590796633" duration="12000" />
+      <workItem from="1752591108981" duration="597000" />
+      <workItem from="1753037186628" duration="22000" />
+      <workItem from="1753299541541" duration="31000" />
+      <workItem from="1753434495209" duration="14000" />
+      <workItem from="1755701490543" duration="15000" />
+      <workItem from="1756746258962" duration="11000" />
+      <workItem from="1758795778955" duration="20000" />
+      <workItem from="1759228939452" duration="5999000" />
+    </task>
+    <task id="LOCAL-00001" summary="tracking the tracks">
+      <option name="closed" value="true" />
+      <created>1746903331456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746903331456</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change mod version">
+      <option name="closed" value="true" />
+      <created>1746903608163</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746903608163</updated>
+    </task>
+    <task id="LOCAL-00003" summary="build file">
+      <option name="closed" value="true" />
+      <created>1746905571910</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746905571910</updated>
+    </task>
+    <task id="LOCAL-00004" summary="logging">
+      <option name="closed" value="true" />
+      <created>1746977606995</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746977606995</updated>
+    </task>
+    <task id="LOCAL-00005" summary="null check">
+      <option name="closed" value="true" />
+      <created>1746983016434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983016434</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix imports">
+      <option name="closed" value="true" />
+      <created>1746983036485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983036485</updated>
+    </task>
+    <task id="LOCAL-00007" summary="more null checks">
+      <option name="closed" value="true" />
+      <created>1746983699272</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746983699272</updated>
+    </task>
+    <task id="LOCAL-00008" summary="remove logging and tweak visuals">
+      <option name="closed" value="true" />
+      <created>1746986252024</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746986252024</updated>
+    </task>
+    <task id="LOCAL-00009" summary="max distance on carriages">
+      <option name="closed" value="true" />
+      <created>1746986882601</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746986882601</updated>
+    </task>
+    <task id="LOCAL-00010" summary="config">
+      <option name="closed" value="true" />
+      <created>1747157746371</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747157746371</updated>
+    </task>
+    <task id="LOCAL-00011" summary="config">
+      <option name="closed" value="true" />
+      <created>1747242825076</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747242825076</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tracking the tracks" />
+    <MESSAGE value="change mod version" />
+    <MESSAGE value="build file" />
+    <MESSAGE value="logging" />
+    <MESSAGE value="null check" />
+    <MESSAGE value="fix imports" />
+    <MESSAGE value="more null checks" />
+    <MESSAGE value="remove logging and tweak visuals" />
+    <MESSAGE value="max distance on carriages" />
+    <MESSAGE value="config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config" />
+  </component>
+</project>
