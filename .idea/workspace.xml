@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95777d8a-6a43-4876-9661-de6c6532bcf9" name="Changes" comment="1.21 neoforge">
+    <list default="true" id="95777d8a-6a43-4876-9661-de6c6532bcf9" name="Changes" comment="fix java gha">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/create-bluemap.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/create-bluemap.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/create-bluemap.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/create-bluemap.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Create_bluemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Create_bluemap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Watcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/szedann/create_bluemap/Watcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="create-bluemap" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="create-bluemap" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="mod development" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -92,11 +105,14 @@
     &quot;Gradle.Build create-bluemap.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.create-bluemap [:fabric:build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.create-bluemap [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.create-bluemap [runClient].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.create-bluemap:fabric [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.create-bluemap:fabric [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\zrkk\\AppData\\Roaming\\JetBrains\\IntelliJIdea2024.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
     &quot;git-widget-placeholder&quot;: &quot;1.21.1/neoforge&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JDK&quot;: &quot;temurin-21&quot;,
@@ -189,6 +205,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="create-bluemap [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="create-bluemap [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -259,6 +297,7 @@
       <list>
         <item itemvalue="Gradle.create-bluemap [runClient]" />
         <item itemvalue="Gradle.create-bluemap:fabric [runClient]" />
+        <item itemvalue="Gradle.create-bluemap [build]" />
         <item itemvalue="Gradle.create-bluemap:fabric [build]" />
         <item itemvalue="Gradle.create-bluemap [:fabric:build]" />
       </list>
@@ -299,6 +338,9 @@
       <workItem from="1756746258962" duration="11000" />
       <workItem from="1758795778955" duration="20000" />
       <workItem from="1759228939452" duration="6361000" />
+      <workItem from="1759675908470" duration="602000" />
+      <workItem from="1762184296302" duration="15000" />
+      <workItem from="1762623914810" duration="2819000" />
     </task>
     <task id="LOCAL-00001" summary="tracking the tracks">
       <option name="closed" value="true" />
@@ -404,7 +446,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759235337873</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="gradle wrapper">
+      <option name="closed" value="true" />
+      <created>1759235980904</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759235980904</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix java gha">
+      <option name="closed" value="true" />
+      <created>1759236122454</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759236122454</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,6 +481,8 @@
     <MESSAGE value="config" />
     <MESSAGE value="1.21 neoforge" />
     <MESSAGE value="gh actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="gh actions" />
+    <MESSAGE value="gradle wrapper" />
+    <MESSAGE value="fix java gha" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix java gha" />
   </component>
 </project>

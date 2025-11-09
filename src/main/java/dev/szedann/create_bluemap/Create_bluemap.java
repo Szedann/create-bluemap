@@ -16,6 +16,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -30,7 +31,7 @@ public class Create_bluemap
     {
         NeoForge.EVENT_BUS.register(this);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.SERVER, Config.SPEC);
     }
 
 
@@ -38,12 +39,15 @@ public class Create_bluemap
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-        BlueMapAPI.onEnable(api->{
-            Watcher.start();
-        });
+        BlueMapAPI.onEnable(Watcher::start);
         BlueMapAPI.onDisable(api -> {
             Watcher.stop();
         });
+    }
+    @SubscribeEvent
+    public void onServerStopping(ServerStoppingEvent event)
+    {
+        Watcher.stop();
     }
 
 }
