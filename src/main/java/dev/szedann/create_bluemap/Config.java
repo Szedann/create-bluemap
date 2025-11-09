@@ -40,13 +40,21 @@ public class Config
     public static boolean renderCarriages;
     public static boolean renderTrains ;
 
-    @SubscribeEvent
-    static void onLoad(final ModConfigEvent event)
-    {
+    private static void applyValues(){
         trainInterval = INTERVAL_TRAINS.get();
         trackInterval = INTERVAL_TRACKS.get();
         renderTracks = RENDER_TRACKS.get();
         renderCarriages = RENDER_CARRIAGES.get();
         renderTrains  = RENDER_TRAINS.get();
+    }
+
+    @SubscribeEvent
+    static void onLoad(final ModConfigEvent.Loading event)
+    {
+        applyValues();
+    }
+    @SubscribeEvent
+    static void onReload(final ModConfigEvent.Reloading event){
+        applyValues();
     }
 }
