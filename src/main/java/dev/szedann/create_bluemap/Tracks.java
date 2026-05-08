@@ -19,7 +19,6 @@ import java.util.HashSet;
 import java.util.Map;
 
 public class Tracks {
-    private static final Color trackColor = new Color(Config.lineColorTracks);
     public static void update(BlueMapAPI api) {
         if (!Config.renderTracks) return;
         Map<ResourceKey<Level>, MarkerSet> lineMarkerSets = new HashMap<>();
@@ -49,7 +48,7 @@ public class Tracks {
                         .label("edge")
                         .depthTestEnabled(false)
                         .listed(false)
-                        .lineColor(trackColor)
+                        .lineColor(new Color(Config.lineColorTracks))
                         .build();
 
                 lineMarkerSet.put(edge.toString(), marker);
