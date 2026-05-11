@@ -32,6 +32,32 @@ public class Config
             .comment("Whether to render trains")
             .define("renderTrains", true);
 
+    private static final ModConfigSpec.IntValue LINE_WIDTH_TRAINS = BUILDER
+            .comment("")
+            .comment("Graphical options for displayed lines in BlueMap")
+            .comment("")
+            .comment("line width:")
+            .comment("Width of the train lines")
+            .defineInRange("lineWidthTrains", 6, 1, 20);
+
+    private static final ModConfigSpec.IntValue LINE_WIDTH_TRACKS = BUILDER
+            .comment("Width of the train track lines")
+            .defineInRange("lineWidthTracks", 6, 1, 20);
+
+    private static final ModConfigSpec.ConfigValue<String> LINE_COLOR_TRACKS = BUILDER
+            .comment("")
+            .comment("line colors:")
+            .comment("Color of the train track lines; HEX value")
+            .define("lineColorTracks", "#fff");
+
+    private static final ModConfigSpec.ConfigValue<String> LINE_COLOR_MANUAL_TRAINS = BUILDER
+            .comment("Color of trains without schedules; HEX value")
+            .define("lineColorManualTrains", "#f99");
+
+    private static final ModConfigSpec.ConfigValue<String> LINE_COLOR_SCHEDULED_TRAINS = BUILDER
+            .comment("Color of trains with schedules; HEX value")
+            .define("lineColorScheduledTrains", "#99f");
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static int trainInterval;
@@ -39,6 +65,11 @@ public class Config
     public static boolean renderTracks;
     public static boolean renderCarriages;
     public static boolean renderTrains ;
+    public static int lineWidthTrains;
+    public static int lineWidthTracks;
+    public static String lineColorTracks;
+    public static String lineColorManualTrains;
+    public static String lineColorScheduledTrains;
 
     private static void applyValues(){
         trainInterval = INTERVAL_TRAINS.get();
@@ -46,6 +77,11 @@ public class Config
         renderTracks = RENDER_TRACKS.get();
         renderCarriages = RENDER_CARRIAGES.get();
         renderTrains  = RENDER_TRAINS.get();
+        lineWidthTrains = LINE_WIDTH_TRAINS.get();
+        lineWidthTracks = LINE_WIDTH_TRACKS.get();
+        lineColorTracks = LINE_COLOR_TRACKS.get();
+        lineColorManualTrains = LINE_COLOR_MANUAL_TRAINS.get();
+        lineColorScheduledTrains = LINE_COLOR_SCHEDULED_TRAINS.get();
     }
 
     @SubscribeEvent
