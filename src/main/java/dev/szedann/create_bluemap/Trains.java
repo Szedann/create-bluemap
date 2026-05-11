@@ -20,6 +20,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Trains {
+    private static final Color manualColor = new Color(Config.lineColorScheduledTrains);
+    private static final Color scheduledColor = new Color(Config.lineColorManualTrains);
+
     public static void update(BlueMapAPI api) {
         if (Config.renderTrains)
             updatePOIs(api);
@@ -91,10 +94,7 @@ public class Trains {
                                 .addPoint(new Vector3d(p1.x, p1.y + 1, p1.z))
                                 .addPoint(new Vector3d(p2.x, p2.y + 1, p2.z))
                                 .build())
-                        .lineColor(
-                            scheduled ? 
-                            new Color(Config.lineColorScheduledTrains) : 
-                            new Color(Config.lineColorManualTrains))
+                        .lineColor(scheduled ? manualColor : scheduledColor)
                         .lineWidth(front ? Config.lineWidthTrains +2 : Config.lineWidthTrains)
                         .depthTestEnabled(false)
                         // .maxDistance(400)
