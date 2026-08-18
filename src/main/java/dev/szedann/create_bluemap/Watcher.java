@@ -4,14 +4,16 @@ import de.bluecolored.bluemap.api.BlueMapAPI;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 public class Watcher {
-    private static final ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
-    private static ScheduledFuture<?> future;
+    private static ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
-    public static void start(BlueMapAPI api) {
+    public static synchronized void start(BlueMapAPI api) {
+        if (scheduler.isShutdown()) {
+            scheduler = Executors.newSingleThreadScheduledExecutor();
+        }
+
         Create_bluemap.LOGGER.info("Starting Create Bluemap updater");
         Runnable trainUpdater = () -> {
             try {
@@ -29,10 +31,9 @@ public class Watcher {
         };
         scheduler.scheduleAtFixedRate(trainUpdater, 0, Config.trainInterval, TimeUnit.SECONDS);
         scheduler.scheduleAtFixedRate(trackUpdater, 0, Config.trackInterval, TimeUnit.SECONDS);
-
     }
 
-    public static void stop() {
+    public static synchronized void stop() {
         scheduler.shutdown();
     }
 }
